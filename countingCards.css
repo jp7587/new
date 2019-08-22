@@ -1,0 +1,184 @@
+*{
+  margin:0;
+  padding:0;
+}
+.body{
+  background-color: rgb(42,117,21);;
+}
+.start{
+  text-align: center;
+  background-color:  gray;
+  color: white;
+}
+.score{
+  flex-flow: row;
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.score:hover{
+    background-color: rgb(38,68,191);
+}
+.deck{
+  flex-flow: row;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.one{
+  display:flex;
+  border: 1px black solid;
+  background-color: white;
+}
+.three{
+  flex-flow: row;
+  text-align: center;
+  padding-left: 45px;
+  padding-right: 45px;
+  flex-flow: row;
+  background-color: rgb(38,68,191);
+}
+.what{
+  display:flex;
+  text-align: center;
+  font-size: 23px;
+    background-color: rgb(38,68,191);
+}
+.hit{
+  border:1px black solid;
+  padding:5px;
+}
+.stand{
+  padding: 5px;
+  border:1px black solid;
+}
+.card{
+  display:none;
+}
+.players{
+  padding:10px;
+  background-color: rgb(42,117,21);
+  position: relative;
+  display: flex;
+  font-size: 21px;
+}
+.players div{
+  padding:10px;
+  border:1px black solid;
+  background-color: rgb(42,117,21);
+}
+.player9{
+  position:absolute;
+  right:7%;
+  top:1500%;
+  width:11%;
+  display: flex;
+  flex-flow: column;
+}
+.player8{
+  position: absolute;
+  top:50%;
+  left:45%;
+  display: flex;
+  flex-flow: column;
+}
+.player1{
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  right:11%;
+  top:150%;
+}
+.player2{
+  display: flex;
+  flex-flow: column;
+  position:absolute;
+  right:23%;
+  top:750%;
+}
+.player3{
+  position:absolute;
+  right:35%;
+  top:1050%;
+  display: flex;
+  flex-flow: column;
+}
+.player4{
+  position:absolute;
+  left:45%;
+  top:1250%;
+  display: flex;
+  flex-flow: column;
+}
+.player5{
+  position:absolute;
+  left:32%;
+  top:1050%;
+  display: flex;
+  flex-flow: column;
+}
+.player6{
+  position:absolute;
+  left:21%;
+  top:750%;
+  display: flex;
+  flex-flow: column;
+}
+.player7{
+  position: absolute;
+  left:11%;
+  top:150%;
+  display: flex;
+  flex-flow: column;
+}
+.popup{
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,.7);
+  position: absolute;
+  top:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.pop{
+  width:300px;
+  height:250px;
+  background-color: white;
+  position: relative;
+}
+.close{
+  position:absolute;
+  font-size: 25px;
+  top:0;
+  padding:5px;
+  right:10px;
+  cursor:pointer;
+}
+.cool{
+  position:absolute;
+  top: 17%;
+  right:6%;
+  font-size: 25px;
+  padding-bottom: 10px;
+  border:2px black solid;
+}
+.op:before{
+  content:'';
+}
+.ops{
+  border-width: medium;
+  border-color: black;
+  position: absolute;
+  top:50%;
+  right:45%;
+  font-size: 25px;
+}
+.buttonpop{
+  position: absolute;
+  top:77%;
+  right:39%;
+  font-size: 30px;
+}

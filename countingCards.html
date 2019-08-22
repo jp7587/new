@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Counting Cards</title>
+    <link rel="stylesheet" text ="text/css" href="countingCards.css">
+  </head>
+  <body class="body">
+      <h1 class = "start">Counting Cards</h1>
+      <div class="what">
+          <p class ="three">Running Count (Hover over to see) : </p>
+          <span class="score" id="score">0</span>
+          <p class ="three">True Count (Hover over to see) : </p>
+          <span class="score" id="runningcount">0</span>
+          <p class ="three" id="deck">Decks left : </p>
+          <span class="deck" id="deckcount">0</span>
+          <!-- <a href="popup.html"class="three">Instuctions</a> -->
+      </div>
+      <div class="players">
+        <div class= "player1" id="player11">
+          <h3>player</h3>
+          <span class="card" id="card11">#</span>
+          <span class="card" id="card12">#</span>
+          <span class="card" id="card13">#</span>
+          <span class="card" id="card14">#</span>
+          <span class="card" id="card15">#</span>
+          <span class="card" id="card16">#</span>
+          <span class="card" id="card17">#</span>
+          <span class="card" id="card18">#</span>
+          <span class="card" id="card19">#</span>
+        </div>
+        <div class= "player2" id="player12">
+          <h3>player</h3>
+          <span class="card" id="card21">#</span>
+          <span class="card" id="card22">#</span>
+          <span class="card" id="card23">#</span>
+          <span class="card" id="card24">#</span>
+          <span class="card" id="card25">#</span>
+          <span class="card" id="card26">#</span>
+          <span class="card" id="card27">#</span>
+          <span class="card" id="card28">#</span>
+          <span class="card" id="card29">#</span>
+        </div>
+        <div class= "player3" id="player13">
+          <h3>player</h3>
+          <span class="card" id="card31">#</span>
+          <span class="card" id="card32">#</span>
+          <span class="card" id="card33">#</span>
+          <span class="card" id="card34">#</span>
+          <span class="card" id="card35">#</span>
+          <span class="card" id="card36">#</span>
+          <span class="card" id="card37">#</span>
+          <span class="card" id="card38">#</span>
+          <span class="card" id="card39">#</span>
+        </div>
+        <div class= "player4" id="player14">
+          <h3>player</h3>
+          <span class="card" id="card41">#</span>
+          <span class="card" id="card42">#</span>
+          <span class="card" id="card43">#</span>
+          <span class="card" id="card44">#</span>
+          <span class="card" id="card45">#</span>
+          <span class="card" id="card46">#</span>
+          <span class="card" id="card47">#</span>
+          <span class="card" id="card48">#</span>
+          <span class="card" id="card49">#</span>
+        </div>
+        <div class= "player8">
+          <h3>Dealer</h3>
+          <span class="card" id="card81">#</span>
+          <span class="card" id="card82">#</span>
+          <span class="card" id="card83">#</span>
+          <span class="card" id="card84">#</span>
+          <span class="card" id="card85">#</span>
+          <span class="card" id="card86">#</span>
+          <span class="card" id="card87">#</span>
+          <span class="card" id="card88">#</span>
+          <span class="card" id="card89">#</span>
+        </div>
+        <div class= "player5" id="player15">
+          <h3>Player</h3>
+          <span class="card" id="card51">#</span>
+          <span class="card" id="card52">#</span>
+          <span class="card" id="card53">#</span>
+          <span class="card" id="card54">#</span>
+          <span class="card" id="card55">#</span>
+          <span class="card" id="card56">#</span>
+          <span class="card" id="card57">#</span>
+          <span class="card" id="card58">#</span>
+          <span class="card" id="card59">#</span>
+        </div>
+        <div class= "player6" id="player16">
+          <h3>player</h3>
+          <span class="card" id="card61">#</span>
+          <span class="card" id="card62">#</span>
+          <span class="card" id="card63">#</span>
+          <span class="card" id="card64">#</span>
+          <span class="card" id="card65">#</span>
+          <span class="card" id="card66">#</span>
+          <span class="card" id="card67">#</span>
+          <span class="card" id="card68">#</span>
+          <span class="card" id="card69">#</span>
+        </div>
+        <div class= "player7" id="player17">
+          <h3>player</h3>
+          <span class="card" id="card71">#</span>
+          <span class="card" id="card72">#</span>
+          <span class="card" id="card73">#</span>
+          <span class="card" id="card74">#</span>
+          <span class="card" id="card75">#</span>
+          <span class="card" id="card76">#</span>
+          <span class="card" id="card77">#</span>
+          <span class="card" id="card78">#</span>
+          <span class="card" id="card79">#</span>
+        </div>
+        <div class= "player9">
+          <button class="stand" onclick="deal()" id="deal">Deal</button>
+          <button class="stand" onclick="hit(number,cardnumber)" id="hit">Hit</button>
+          <button class="stand" onclick="stand()" id="stand">Stand</button>
+          <button class="stand" onclick="" id="selectplayer" target="null">Selectplayer</button>
+          <!-- <button class="stand" onclick="resetall()">resetall</button> -->
+        </div>
+      </div>
+      <div class="popup">
+        <div class="pop">
+          <div class="close">x</div>
+          <p class="cool">Select number of players: </p>
+        <div class="op">
+          <select class="ops" id="drop">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+          </select>
+        </div>
+          <button class="buttonpop">Enter</button>
+        </div>
+      </div>
+      <script src="countingCards.js"></script>
+  </body>
+</html>
